@@ -13,6 +13,7 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.1",
+    "@snyk/protect": "latest",
     "sass": "^1.43.2",
     "webpack-cli": "^3.3.11"
   },
@@ -20,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -46,5 +49,6 @@
     "style-loader": "^1.2.1",
     "svg-inline-loader": "^0.8.2"
   },
-  "homepage": "."
+  "homepage": ".",
+  "snyk": true
 }
